@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INPUT-USER</title>
+    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+
+<div class="inputs">
+
+    <input type="text" id="title" placeholder="title">
+    <br>
+    <div class="price">
+       <input onkeyup="getTotal()" type="number"placeholder="price" id="price">
+       <input onkeyup="getTotal()" type="number"placeholder="taxes" id="taxes">
+       <input onkeyup="getTotal()" type="number"placeholder="ads" id="ads">
+       <input onkeyup="getTotal()" type="number"placeholder="discount" id="discount">
+   <small id="total"></small>
+   <button type="submit" id="btn"> SEND</button>
+   </div>
+
+
+
+
+    <table>
+       <thead>
+        <tr>
+            <td>id</td>
+            <td>title</td>
+            <td>taxes</td>
+            <td>discount</td>
+            <td>ads </td>
+            <td>Price</td>
+            <td>total</td>
+           
+        </tr>
+       </thead>
+       <tbody id="tbody">
+      
+       </tbody>
+    </table>
+    <button id="deleteAll">delete  All</button>
+</div>
+
+
+
+
+
+
+
+<div class="list">
+    <div class="contant">
+        <p>BLOG</p>
+        <i class="fa fa-list"></i>
+
+    </div>
+    <div class="contant">
+        <p>TEAM</p>
+        <i class="fa fa-user"></i>
+
+    </div>
+    <div class="contant">
+        <p>SERVICE</p>
+        <i class="fa fa-comment"></i>
+
+    </div>
+    <div class="contant">
+        <p>CONTACT</p>
+        <i class="fa fa-map"></i>
+
+    </div>
+    <div class="contant">
+        <p>ABOUT</p>
+        <i class="fa fa-book"></i>
+
+    </div>
+</div>
+
+    <script src="input.js"></script>
+</body>
+</html>
