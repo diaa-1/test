@@ -79,7 +79,7 @@ body{
     border-radius:1.25em 1.25em 0 0;
     display: flex;
     justify-content: center;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     right: 35%;
     background-color: #555;
